@@ -27,7 +27,7 @@ LIBMCRYPT_VERSION=2.5.8
 MCRYPT_URL=http://downloads.sourceforge.net/project/mcrypt/Libmcrypt/${LIBMCRYPT_VERSION}/libmcrypt-${LIBMCRYPT_VERSION}.tar.bz2 
 APACHE_VERSION="2.2.22"
 APACHE_URL=http://www.apache.org/dist/httpd/httpd-${APACHE_VERSION}.tar.bz2
-PHP_VERSION="5.4.1"
+PHP_VERSION="5.3.27"
 PHP_URL=http://us.php.net/distributions/php-${PHP_VERSION}.tar.bz2
 
 OUTPUT="apache-${APACHE_VERSION}_php-${PHP_VERSION}"
