@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
+# Returns YAML formatted hash with 3 keys
+# addons - default addons to install
+# config_vars - default environment vars to use
+# default_process_types: profile entries for this buildpack
 
 cat <<EOF
 ---
+addons:
+  - shared-database:5mb
 default_process_types:
   web: sh boot.sh
 EOF
-
