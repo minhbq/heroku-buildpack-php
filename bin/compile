@@ -13,7 +13,7 @@ heroku_rev='-2'
 
 # config
 MCRYPT_VERSION="2.5.8"
-APACHE_VERSION="2.2.25"
+APACHE_VERSION="2.2.22"
 APACHE_PATH="apache"
 PHP_VERSION="5.4.1"
 PHP_PATH="php"
