@@ -6,7 +6,7 @@ cd /tmp
 #
 # Affixed to all vendored binary output to represent changes to the
 # compilation environment without a change to the upstream version,
-# e.g. PHP 5.3.27 without, and then subsequently with, libmcrypt.
+# e.g. PHP 5.4.1 without, and then subsequently with, libmcrypt.
 heroku_rev='-2'
 
 # Clear /app directory
@@ -58,14 +58,14 @@ make install -s
 popd
 
 # Take care of vendoring PHP.
-php_version=5.3.27
+php_version=5.4.1
 php_dirname=php-$php_version
 php_archive_name=$php_dirname.tar.bz2
 
 # Download PHP if necessary.
 if [ ! -f $php_archive_name ]
 then
-    curl -Lo $php_archive_name http://us1.php.net/get/php-5.3.27.tar.bz2/from/www.php.net/mirror
+    curl -Lo $php_archive_name http://us1.php.net/get/php-5.4.1.tar.bz2/from/www.php.net/mirror
 fi
 
 # Clean and extract PHP.
